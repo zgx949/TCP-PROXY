@@ -17,8 +17,10 @@ def forward_data(source_client_socket, dest_address, dest_port):
 
     except Exception as e:
         print(f"Error occurred during forwarding: {e}")
+    finally:
         source_client_socket.close()
         dest_socket.close()
+        print(f"local port:{local_port}, closed!")
 
 
 def _forward(src_socket, dest_socket):
