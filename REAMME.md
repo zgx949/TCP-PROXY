@@ -1,5 +1,5 @@
 # TCP-PROXY
-## function
+## Function
 local TCP connect -> remote TCP address(IP/Host:port)
 
 ## How to use
